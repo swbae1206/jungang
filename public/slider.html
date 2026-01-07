@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Swiper 기본 사용법</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      height: 50vh;
+    }
+    .swiper-slide {
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .swiper .swiper-wrapper .slide1 {
+  background-image : linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    }
+    .swiper .swiper-wrapper .slide2 {
+  background-image : linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    }
+    .swiper .swiper-wrapper .slide3 {
+  background-image : linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper 구조 -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">슬라이드 1</div>
+      <div class="swiper-slide slide2">슬라이드 2</div>
+      <div class="swiper-slide slide3">슬라이드 3</div>
+    </div>
+
+    <!-- 페이지네이션 (점 표시) -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      effect: 'fade',
+      speed: 3000,
+      fadeEffect: {
+        crossFade: true
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

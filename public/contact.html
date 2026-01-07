@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One IT Academy</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- NAV -->
+
+  <nav>
+    <img src="images/logo.png" alt="logo">
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fas fa-times"></i>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a class="blue" href="indexEn.html">English</a></li>
+      </ul>
+      <img src="images/menu.png" alt="menu" id="menu-btn">
+    </div>
+  </nav>
+
+  <section id="contact-home">
+    <h2>Contact Us /</h2>
+  </section>
+
+  <section id="contact">
+    <div class="getin">
+      <h2>연락처</h2>
+      <p>Looking for help? Fill the form and start a new adventure.</p>
+      <div class="getin-details">
+        <h3>Hadequaters</h3>
+        <div>
+          <i class="far fa-home get"></i>
+          <p>14 Youngsoro, Namgu, Pusan, Korea</p>
+        </div>
+        <h3>Phone</h3>
+        <div>
+          <i class="far fa-phone-alt get"></i>
+          <p>(+82) 10 1234 1234<br>(+82) 51 1234 1234</p>
+        </div>
+        <h3>Support</h3>
+        <div>
+          <i class="far fa-envelope-open-text get"></i>
+          <p>One IT Academy@support.com<br>help@support.com</p>
+        </div>
+        <h3>Follow Us</h3>
+        <div class="pro-link">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <h4>제품 및 기술문의</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur eius magnam architecto dicta eum.</p>
+      <div class="form-col">
+        <input type="text" placeholder="회사" name="" id="">
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="이름" name="" id="">
+        <input type="text" placeholder="이메일" name="" id="">
+      </div>
+      <div class="form-col">
+        <input type="text" placeholder="제목" name="" id="">
+      </div>
+      <div class="form-col">
+        <textarea cols="30" placeholder="무엇을 도와드릴까요?" name="" id=""></textarea>
+      </div>
+      <div class="form-col">
+        <button type="submit">메시지 보내기</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.742069496473!2d129.0984944483212!3d35.13659428133403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ecf0ef2b40b5%3A0x50d0de106b280a86!2z67aA7IKw6rSR7Jet7IucIOuCqOq1rCDsmqnshozroZwgMTQ!5e0!3m2!1sko!2skr!4v1729057114460!5m2!1sko!2skr"
+      style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>features</h3>
+        <li>Manage Reputions</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>NewsLetters</h3>
+        <p>You can trust us. we only send promo offers</p>
+        <div class="subscribe">
+          <div><input type="text" name="" id="" placeholder="Your Email Address"></div>
+          <div class="btn"> <a href="#" class="yellow">SUBSCRIBE</a></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#169;2024 All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    $("#menu-btn").click(function () {
+      $("nav .navigation ul").addClass("active")
+    })
+    $("#menu-close").click(function () {
+      $("nav .navigation ul").removeClass("active")
+    })
+  </script>
+</body>
+
+</html>
